@@ -1,0 +1,127 @@
+    /*style*/ 
+            
+            
+            @media screen and (min-width:700px){
+                .menu{
+                    font-size: 2em;
+                }
+            }
+        
+            .menu{
+                border: 1px solid blue;
+                text-align: center;
+                background-image: linear-gradient(to right,blue,brown,green);
+                margin-top: 0px;
+                margin-bottom: 0px;
+                /*font-size: 15px;*/
+            }
+            .menu a{
+                margin: 10px;
+                font-family: serif;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+                
+            }
+            .menu a:hover{
+                background: orange;
+            }
+            
+            .full_page h3{
+                text-align: center;
+            }
+            
+            .title1{
+                margin-left: 5px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                text-decoration: blue underline;
+            }
+            .title1_sub{
+                border: 1px solid black;
+                padding: 6px;
+                font-family: serif;
+                word-spacing: 2px;
+            }
+            .title1_sub span{
+               font-style: italic;
+               font-weight: bold;
+               color: blue;
+               text-decoration: green underline dotted;
+               font-size: 17px;
+            }
+            
+            .title2{
+                margin-left: 5px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                text-decoration: blue underline;
+            }
+            .title2_sub{
+                border: 1px solid black;
+                padding: 6px;
+                font-family: serif;
+                word-spacing: 2px;
+            }
+            .title2_sub span{
+               font-style: italic;
+               font-weight: bold;
+               color: blue;
+               font-size: 17px;
+            }
+            
+            .title3{
+                margin-left: 5px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                text-decoration: blue underline;
+            }
+            .title3_sub{
+                border: 1px solid black;
+                padding: 6px;
+                font-family: serif;
+                word-spacing: 2px;
+            }
+            .title3_sub span{
+               font-style: italic;
+               font-weight: bold;
+               color: blue;
+               font-size: 17px;
+            }
+            .title3_sub .note{
+                color: red;
+            }
+            .title3_sub .note_desc{
+                color: #339900;
+            }
+            .title4{
+                margin-left: 5px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                text-decoration: darkgray underline;
+            }
+            
+            .additional{
+                text-align: center;
+                border: 1px solid;
+                padding: 4px;
+                text-decoration: green underline double;
+                font-size: 25px;
+                margin: 50px;
+            }
+            .additional_services .it_supports li{
+                font-weight: bold;
+            }
+            .additional_services .it_supports dd{
+                font-family: serif;
+            }
+            
+            footer{
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-family: serif;
+                font-weight: bold;
+                align-content: center;
+                background: lightgray;
+            }
