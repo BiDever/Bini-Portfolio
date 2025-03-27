@@ -1,65 +1,213 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
+
+<head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device
-          -width ,initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/skills.css">
+
+    <title> New UpWork Profile Portfolio Skills Page </title>
+
+    <!--style type="text/css">
+
+@media screen and (min-width:700px) {
+
+        .page .menu {
+            font-size: 3em;
+        }
+        .page .menu a {
+            margin: 20px;
+        }
+        
+        .page .skill_lists #skill_title{
+            font-size: 50px;
+        }
+        .page .skill_lists #skill_description u{
+            font-size: 40px;
+        }
+        .page .skill_lists #skill_description{
+            font-size: 30px;
+        }
+        
+       .page .tech_list li h3{
+            font-size: 45px;
+        }
+        .page .tech_list .des {
+            font-size: 35px;
+        }
+
+    }
     
-        <title> Skills Showing </title>
-        
-    </head>
-    
-    <body>
-        
-    <header class="menu">
-        
-        <nav>
-            
+        .page{
+            margin: 5px;
+        }
+        body {
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px solid;
+            padding: 5px;
+        }
+        .menu a {
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: serif;
+            color: black;
+            border: 1px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: none;
+        }
+        .menu a:hover {
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .skill_lists {
+            width: 100%;
+            height: auto;
+        }
+        .skill_lists #skill_title {
+            font-size: 20px;
+            font-family: serif;
+            font-weight: bold;
+        }
+        .skill_lists img {
+            width: 100%;
+            height: auto;
+        }
+        .skill_lists #skill_description {
+            font-size: 15px;
+            font-family: Sans-Serif;
+            font-weight: normal;
+            text-align: left;
+        }
+        .skill_lists #skill_description u{
+            font-size: 18px;
+            font-family: Comic;
+        }
+
+        .tech_list {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 2px solid green;
+        }
+        .tech_list li {
+            list-style: disc;
+            color: black;
+            text-decoration: red underline double;
+        }
+        .tech_list li h4{
+            font-size: 25px;
+        }
+        .tech_list .des {
+            font-size: 15px;
+            text-decoration: none;
+            text-decoration: blue underline;
+            list-style: square;
+            font-family: serif;
+            background: lightgray;
+            font-style: bold italic;
+        }
+
+
+
+    </style-->
+
+
+</head>
+<body>
+
+
+    <div class="page">
+
+        <nav class="menu">
+
             <a href="index.html"> Home </a>
             <a href="skills.html"> Skills </a>
             <a href="services.html"> Services </a>
-            <a href="experience.html"> Experience </a>
             <a href="contact.html"> Contact-Me </a>
-            
+
         </nav>
-        
-    </header>
-        
-      <!--2 class="title"> My Skills </h2-->
-      
- <ol class="skill_lists">
-     
-    <li> <h4> Front-End Web Developer </h4> </li>
-    <img src="img/frontenddev.jpg" alt="What Is Front-End Developer" width="100%"height="150px"/>
-    <li> <h4> Web App Developer </h4> </li>
-    <img src="img/webappdev.jpg" alt="What Is Web-App Developer" width="100%"height="150px"/>
-    <li> <h4> Android Moblie App Developer </h4></li>
-    <img src="img/androdev.jpg" alt="What Is Mobile-App Developer" width="100%"height="150px"/>
-    
- </ol>
- 
- <p> <h3 class="title2"> What Technologies Do I Use ?</h3></p>
- 
- <ul class="tech_list">
-     
-    <li> <h4> Html </h4></li>
-    <li class="des"> <dd> <i> stands For Hyper Text Markup Language, HTML describes the structure of Web Pages. </i> </dd> </li>
-    <li> <h4> Css </h4></li>
-    <li class="des"> <dd> <i> stands For Cascading StyleSheet, </i> </dd> </li>
-    <li class="des"> <dd> <i> Css is Cascading Stylesheet Language Used to Describe The Presentation of an HTML Document. </i> </dd> </li>
-    <li class="des"> <dd> <i> Css Describes How Elements Should be Rendered In Screen. </i> </dd> </li>
-    <li> <h4> JavaScript </h4></li>
-    <li class="des"> <dd> <i> JavaScript is Programming or Scripting Language that Allows Implementation of Features In Web Pages. </i> </dd></li>
-    <li> <h4> Java </h4></li>
-    
- </ul>
- 
-     
-    <footer> Optimized For Mobile-Phone Devices </footer>
-            
- 
- </body>
- 
-</html>
+
+        <div class="skill_lists">
+
+            <p id="skill_title">
+                Front-End Web Developer
+            </p>
+
+            <img src="webappimg.jpg" alt="Skill One" id="sk1" />
+            <br>
+
+            <p id="skill_description">
+                <u> Front-End Web Developer Is </u> : <br><br> <i class="detail"> The Guy Who Creat The Front End Or Client Side Of Website Like This One. <br> We Can Host Serverless Websites Like Landing Pages , Product Listing Pages and So On. With Free Hosting Platforms Like Netlify </i>
+            </p>
+
+            <br>
+            <br>
+
+
+            <p id="skill_title">
+                Front-End Web Technologies
+            </p>
+
+            <img src="frontenddev.jpg" alt="Skill Two" id="sk2" />
+            <br>
+
+            <p id="skill_description">
+                <u> Front-End Web Technologies are </u> : <br><br> <i class="detail"> The Programming/Computer Language Used To Creat The Website Layout , Design , View and Content like Color,Button,Font-Size , Weight , Style etc...</i>
+            </p>
+
+
+            <br>
+            <br>
+
+
+            <ul class="tech_list">
+
+                <li> <h4> Html </h4></li>
+                <li class="des"> <dd> <i> stands For Hyper Text Markup Language, HTML describes the structure of Web Pages. </i> </dd> </li>
+                <li> <h4> Css </h4></li>
+                <li class="des"> <dd> <i> stands For Cascading StyleSheet, </i> </dd> </li>
+                <li class="des"> <dd> <i> Css is Cascading Stylesheet Language Used to Describe The Presentation of an HTML Document. </i> </dd> </li>
+                <li class="des"> <dd> <i> Css Describes How Elements Should be Rendered In Screen. </i> </dd> </li>
+                <li> <h4> JavaScript </h4></li>
+                <li class="des"> <dd> <i> JavaScript is Programming or Scripting Language that Allows Implementation of Features In Web Pages. </i> </dd></li>
+
+            </ul>
+
+
+            <br>
+            <br>
+
+
+            <p id="skill_title">
+                Web Hosting
+            </p>
+
+            <img src="netlify.jpg" alt="Skill Two" id="sk2" />
+            <br>
+
+            <p id="skill_description">
+                <u> Web Hosting Is </u> : <br><br> <i class="detail"> The Process Of Uploading Web Files To Servers and Make Them Available To Everyone or Anyone On The Internet We also Call It Deploying Websites. <br> To Deploy Website and Make Your Content Or Products Available On The Internet Can Be Hard Because of Servers Price and Lack Of Technical Knowledge ,  i Can Host Websites For Free Price and Take Care Of Every Technical Problems Using Free WebApp Hosting Platform Called Netlify. </i>
+            </p>
+
+        </div>
+
+        <br>
+        <br>
+
+
+    </body>
+
+</html

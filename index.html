@@ -2,67 +2,324 @@
 <html>
     
     <head>
-            <meta charset="UTF-8">
+    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/index.css">
     
-        <title> My Portfolio </title>
-        
-    </head>
+    <title> New UpWork Profile Portfolio </title>
     
+    <!--style type="text/css">
+
+
+        @media screen and (min-width:700px){
+            
+            .menu a{
+                font-size: 3em;
+            }
+            .page{
+
+            }
+            .home{
+                display: flex;
+                flex-wrap: flex;
+                justify-content: center;
+            }
+            .identity #photo{
+                height: auto;
+            }
+            .identity{
+                margin-bottom: ;
+            }
+            .skill_detail p{
+                margin-top: 0px;
+                font-size: 3em;
+            }
+          .home .skill_detail #hireme{
+              font-size: 50px;
+            }
+        } /* Media Screen End */
+        
+        
+        .about{
+            text-align: center;
+            font-size: 25px;
+            margin: 5px;
+        }
+        .page{
+            margin: 5px;
+            border: 1px solid;
+            box-shadow: 1px 2px 25px 0.5px black;
+            padding: 10px;
+            
+        }
+        .menu{
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px solid;
+            padding: 5px;
+        }
+        .menu a{
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: serif;
+            color: black;
+            border: 1px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: none;
+        }
+        .menu a:hover{
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+        
+        .home{
+            margin: 5px;
+        }
+        
+        .identity{
+            text-align: center;
+            width: 100%;
+            margin-right: 5%;
+        }
+        .identity #photo{
+            width: 100%;
+            height: auto;
+            border-radius: 55px 5px 55px 5px;
+            animation: shape 5s infinite ease-in;
+            animation-direction: alternate-reverse;
+        }
+        .identity #name , #skill{
+            font-size: 20px;
+            font-family: serif;
+            line-height: normal;
+            background: aqua;
+            border: 1px solid;
+            border: none;
+            border-radius: 5%;
+            padding: 5px;
+            animation: identity_background 3s infinite;
+            animation-direction: alternate-reverse;
+        }
+        
+        
+      /*  .skill_detail{
+            width: 350px;
+            height: 180px;
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 30px;
+            line-height: 3px;
+            font-weight: bold;
+            font-family: Times;
+            background: lightgray;
+            border: 1px solid black;
+            box-shadow: 1px 1px 10px 0.5px black;
+        }*/
+        .skill_detail{
+            width: 100%;
+            text-align: center;
+            align-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background: #adadad;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: serif;
+            border: 1px solid;
+            box-shadow: 2px 2px 15px 0.5px black;
+            border-radius: 25px 5px 25px 5px;
+        }
+        
+        .skill_detail #d1{ }
+        .skill_detail #d2{ color: blue; }
+        .skill_detail #d3{ }
+        .skill_detail #d4{ color: blue; }
+             
+        .skill_detail .socialN{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: flex;
+            overflow-x: scroll;
+            align-content: center;
+        }  
+        
+        .skill_detail .socialN img{
+            width: 100px;
+            height: auto;
+        }
+        .skill_detail #hireme{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: serif;
+            background: green;
+            color: white;
+            padding: 5px;
+            border-radius: 5%;
+            box-shadow: 1px 2px 20px 5px yellow;
+            border: ;
+            margin: 15px;
+        }
+        .skill_detail #hireme:hover{
+            /* Animate */
+            animation-name: focus;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in ease-out;
+        }
+        @keyframes focus{    
+          /*  from{
+              box-shadow: 1px 2px 25px 15px green ;
+              border-left: 1px dotted purple;
+              padding: 5px;
+            }
+            to{
+              box-shadow: 1px 2px 30px 10px red ;
+              border-right: 1px dotted yellow;
+              padding: 30px;
+            }*/
+            
+            0%{
+              box-shadow: 1px 2px 90px 15px #ff00fb;
+              color: white;
+            }
+            50%{
+              box-shadow: 1px 2px 90px 35px lightgreen ;
+              color: yellow;
+            }
+            100%{
+              box-shadow: 1px 2px 90px 10px #ff00fb;
+              color: white;
+            }
+        }
+        
+        
+        @keyframes shape{
+            
+            0%{
+                border-radius: 5px 55px 5px 55px;
+                filter: blur(0px);
+            }
+            90%{
+                border-radius: 55px 5px 55px 55px;
+                filter: blur(5px);
+            }
+            100%{
+                /*filter: blur(0px);*/
+            }
+        }
+        
+        @keyframes identity_background{
+           
+           0%{
+               background-image: linear-gradient(red , orange);
+           }
+           100%{
+               background-image: radial-gradient(yellow , green);
+           }
+            
+        }
+        
+       /* #circle{
+            position: absolute;
+            top: 20px;
+            width: 80px;
+            height: 50px;
+            border-radius: 25%;
+            background: transparent;
+            border: 1px solid green;
+            animation: circle 5s infinite;
+            animation-direction: alternate-reverse;
+        }
+        
+        @keyframes circle{
+            
+            0%{
+                border-radius: 99px 23px 69px 33px;
+            }
+            30%{
+                border-radius: 34px 89px 109px 13px;
+            }
+            60%{
+                border-radius: 84px 29px 09px 1px;
+            }
+            100%{
+                border-radius: 46px 77px 86px 90px;
+            }
+        } */
+        
+    </style-->
+    
+    </head>
     <body>
         
-    <header class="menu">
+        <div class="about">
+            
+        <b> This Is Biniam's Portfolio </b> 
+            
+        </div>
+
         
-        <nav>
+    <div class="page">
+        
+        <div id="circle">  </div>
+        
+        <nav class="menu">
             
             <a href="index.html"> Home </a>
             <a href="skills.html"> Skills </a>
             <a href="services.html"> Services </a>
-            <a href="experience.html"> Experience </a>
             <a href="contact.html"> Contact-Me </a>
             
         </nav>
+    
+      <div class="home">  
         
-    </header>
-        
-        <div class="home-content">
+        <div class="identity">
             
-            <div class="intro">
-              
-            <img class="photo" src="img/pro.jpg"alt="Profile Picture"/>   
-            <p class="name"> Hi, It's <span> Bini </span>  </p>
-            <p class="pation"> I'M a <span> Web Developer </span>  </p>
+            <img id="photo" src="pro.jpg" alt="Photo"/>
+            
+            <p id="name"> I'm <b> Biniam </b> </p>
+            <p id="skill"> <b> Web Developer </b></p>
+            
+        </div>
+        
+        
+        <div class="skill_detail">
+            
+            
+            <p id="d1"> I Build Custom </p>
+            <p id="d2"> &nbsp &nbsp Website Solutions </p>
+            <p id="d3"> That Helps Your </p>
+            <p id="d4"> &nbsp Business Grow </p>
+            
+            
+            <div class="socialN">
+                
+                <img id="fb" src="fecebook.jpg" alt="Facebook"/>
+                <img id="uw" src="upwork1.jpg" alt="UpWork"/>
+                <img id="inst" src="insta.jpg" alt="Instagram"/>
+                <img id="li" src="linkedin.jpg" alt="Linked In"/>
+                
             </div>
             
-            <div class="detail">
-                
-            <p class="description"> i Creat Static Websites Like This One You Are Visiting. focusing on clean design and user-friendly experiences , For My Own and For Others With Free Hosting In Netlify. I have Been Creating Static Websites For My Own Mobile Apps. i Use These Technologies : <br> <span> <span class="html"> "Html </span> , <span class="css"> Css </span> , <span
-            class="js"> JavaScript" </span> </span> With These Technologies I Can Creat Full Client Side Landing Web-Pages For You. <mark> <br> if you want to know detail about me you can use the navigations on the top ("skills , services ...")</mark></p>
-            
-           </div> 
-            
-        </div>
-        
-        <div class="social">
-            
-          <!--  <b> Fb </b>
-            <b> X </b>
-            <b> Git </b>
-            <b> Inst </b> -->
-            
             <br>
-            <br>
-        <a href="https://www.upwork.com/freelancers/~0168b7394717e0b88b"> <button class="hire_button" id="h"> Hire Me</button> </a>
             
-        </div>
-      
-        </div>
+            <button id="hireme"> I Like To Hire You</button>
+            
+         </div>
+      </div>
         
-        
-        <footer> This Portfolio Is Under-Building </footer>
-        
+    </div>
+    
     </body>
     
 </html>

@@ -2,57 +2,208 @@
 <html>
     
     <head>
-            <meta charset="UTF-8">
+    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="css/contact.css">
     
-        <title> Contact-Me </title>
-        
-    </head>
+    <title> New UpWork Profile Portfolio Skills Page </title>
     
+    <!--style type="text/css">
+    
+            
+        @media screen and (min-width:700px){
+            
+           .page .menu{
+                font-size: 3em;
+            }
+            
+           .page .head_description p{
+                font-size: 35px;
+            }
+            
+            .page #contact_form .input_field input{
+                font-size: 35px;
+            }
+            
+            .page #contact_form textarea{
+                font-size: 35px;
+            }
+            .page #contact_form #submit_button{
+                font-size: 35px;
+            }
+        }
+    
+    
+        .page{
+            margin: 5px;
+        }
+        body{
+            background: #f2f2f2;
+            background: white;
+            text-align: center;
+        }
+    
+        .menu{
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px solid;
+            padding: 5px;
+        }
+        .menu a{
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: serif;
+            color: black;
+            border: 1px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: none;
+        }
+        .menu a:hover{
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+       
+       .head_description{
+           text-align: left;
+           margin: 30px;
+           border: 1px solid;
+           padding: 10px;
+           box-shadow: 1px 2px 25px 5px rgb(19,37,200);
+       }
+       .head_description p{
+           font-size: 20px;
+           font-family: serif;
+           color: black;
+           font-weight: bold;
+       }
+       .head_description div{
+           border: 1px solid green;
+           padding: 5px;
+           text-align: center;
+       }
+       
+       #contact_form .input_field{
+           display: flex;
+           flex-wrap: flex;
+           justify-content: center;
+       }
+       
+       #contact_form .input_field input{
+           width: 100%;
+           max-width: 400px;
+           margin-left: 10px;
+           margin-right: 10px;
+           margin-top: 20px;
+           font-size: 15px;
+           box-shadow: 1px 6px 8px 1px black;
+           border-radius: 4px;
+           padding: 10px;
+           font-family: Sans-Serif;
+           font-weight: bold;
+           
+       }
+       
+       #contact_form .input_field input:focus{
+          background-image: radial-gradient(orange , yellow); 
+          color: black;
+       }
+       
+       #contact_form textarea{
+           width: 80%;
+           max-width: 500px;
+           height: 200px;
+           margin-top: 30px;
+           border: 2px solid black;
+           font-family: Sans-Serif;
+           font-weight: bold;
+           box-shadow: 6px 3px 8px 1px black;
+       }
+       #contact_form textarea:focus{
+           background: ;
+       }
+       
+       
+       #contact_form #submit_button{
+           margin: 20px;
+           font-size: 20px;
+           font-weight: bold;
+           font-family: serif;
+           padding: 5px;
+       }
+    </style-->
+    
+    
+    </head>
     <body>
+
         
-    <header class="menu">
+    <div class="page">
         
-        <nav>
+        <nav class="menu">
             
             <a href="index.html"> Home </a>
             <a href="skills.html"> Skills </a>
             <a href="services.html"> Services </a>
-            <a href="experience.html"> Experience </a>
             <a href="contact.html"> Contact-Me </a>
             
         </nav>
         
-    </header>
-    
-    
-    <div class="contact-list">
+       <div class="head_description">
+           
+        <p> If You Have any Question , Feedback or  Request,</p>
+        <p> I'd Love To Hear From You, <br> Please Leave Me a Message or DM Me. </p>
         
-        <ul>
-            
-            <li> Gmail Address </li>
-            <dd> <a href="#gmail"> <b> biniwork02@gmail.com </b></a></dd>
-            
-            <br>
-            
-            <li> Phone Number </li>
-            <dd> <a href="#Phone"> <b> +251 989498028 </b> </a> </dd>
-            
-            <br>
-            
-            <li> UpWork Profile </li>
-            <dd> <a href="https://www.upwork.com/freelancers/~0168b7394717e0b88b"> <b> Up-Work Profile </b> </a></dd>
-            
-            
-            
-        </ul>
+        <div>
+        <p> Contact Me On : <a href="+251 989498028" type="tel"> <br> <span> +251 989498028 </span> </a> </p>
+        <p> Email Me On : <a href="biniwork02@gmail.com" type="email"> <br> <span> biniwork02@gmail.com </span> </a> </p>
+        <p> Up-Work Profile : <a href="https://www.upwork.com/freelancers/~0168b7394717e0b88b" type="email"> <br> <span> Biniam G </span> </a> </p>
+        </div>
         
-    </div>
-    
-    <footer> Optimized For Mobile-Phone Devices </footer>
+        </div>
+        
+        
             
-     </body>
-    
-</html>
+            <div class="form">
+                
+               <form id="contact_form" name="contact" method="POST" data-netlify="true">
+                   
+                <input type="hidden" name="form-name" value="contact" />
+                   
+                   <div class="input_field">
+                       
+                      <input type="text" name="name" id="user_name" placeholder="Name"/> 
+                      
+                                             
+                      <input type="email" name="email" id="user_email" placeholder="Email"/> 
+                       
+                   </div>
+                   
+                   
+                   <div class="input_field">
+                       
+                      <input type="number" name="p_number" id="user_number" placeholder="Phone Number"/> 
+                      
+                                             
+                      <input type="text" name="subject" id="user_subject" placeholder="Subject"/> 
+                       
+                   </div>
+                   
+                   <br>
+                   
+                   <textarea name="message" id="user_message" placeholder="Message"></textarea>
+                   
+                   <br>
+                   
+                   <input type="submit" id="submit_button" name="submit" value="Submit"/>
+               </form> 
+                
+            </div>
+            
+        
+        
+    </body>
