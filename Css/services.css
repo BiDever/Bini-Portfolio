@@ -1,127 +1,111 @@
-    /*style*/ 
-            
-            
-            @media screen and (min-width:700px){
-                .menu{
-                    font-size: 2em;
-                }
-            }
+@media screen and (min-width:700px) {
+    
+        .page .menu{
+            font-size: 3em;
+        }
         
-            .menu{
-                border: 1px solid blue;
-                text-align: center;
-                background-image: linear-gradient(to right,blue,brown,green);
-                margin-top: 0px;
-                margin-bottom: 0px;
-                /*font-size: 15px;*/
-            }
-            .menu a{
-                margin: 10px;
-                font-family: serif;
-                font-weight: bold;
-                color: white;
-                text-decoration: none;
-                
-            }
-            .menu a:hover{
-                background: orange;
-            }
-            
-            .full_page h3{
-                text-align: center;
-            }
-            
-            .title1{
-                margin-left: 5px;
-                margin-top: 50px;
-                margin-bottom: 20px;
-                text-decoration: blue underline;
-            }
-            .title1_sub{
-                border: 1px solid black;
-                padding: 6px;
-                font-family: serif;
-                word-spacing: 2px;
-            }
-            .title1_sub span{
-               font-style: italic;
-               font-weight: bold;
-               color: blue;
-               text-decoration: green underline dotted;
-               font-size: 17px;
-            }
-            
-            .title2{
-                margin-left: 5px;
-                margin-top: 50px;
-                margin-bottom: 20px;
-                text-decoration: blue underline;
-            }
-            .title2_sub{
-                border: 1px solid black;
-                padding: 6px;
-                font-family: serif;
-                word-spacing: 2px;
-            }
-            .title2_sub span{
-               font-style: italic;
-               font-weight: bold;
-               color: blue;
-               font-size: 17px;
-            }
-            
-            .title3{
-                margin-left: 5px;
-                margin-top: 50px;
-                margin-bottom: 20px;
-                text-decoration: blue underline;
-            }
-            .title3_sub{
-                border: 1px solid black;
-                padding: 6px;
-                font-family: serif;
-                word-spacing: 2px;
-            }
-            .title3_sub span{
-               font-style: italic;
-               font-weight: bold;
-               color: blue;
-               font-size: 17px;
-            }
-            .title3_sub .note{
-                color: red;
-            }
-            .title3_sub .note_desc{
-                color: #339900;
-            }
-            .title4{
-                margin-left: 5px;
-                margin-top: 50px;
-                margin-bottom: 20px;
-                text-decoration: darkgray underline;
-            }
-            
-            .additional{
-                text-align: center;
-                border: 1px solid;
-                padding: 4px;
-                text-decoration: green underline double;
+        .page .title {
+            font-size: 3em;
+        }
+        .page .title_sub {
+            font-size: 2.5em;
+        }
+        .page .title_sub span {
+            font-size: 1em;
+        }
+        
+        .additional_services{
+          margin: 80px;
+        }
+        .additional_services .it_supports li {
+            font-size: 2.5em;
+        }
+        .additional_services .it_supports dd {
+            font-size: 2em;
+        }
+        
+        footer{
+          font-size: 2.5em;
+        }
+    }
+
+
+        .page {
+            margin: 5px;
+        }
+        .menu {
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px solid;
+            padding: 5px;
+        }
+        .menu a {
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: serif;
+            color: black;
+            border: 1px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: none;
+        }
+        .menu a:hover {
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .page h3 {
+            text-align: center;
+        }
+
+        .title {
+            margin-left: 5px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            text-decoration: blue underline;
+        }
+        .title_sub {
+            border: 1px solid black;
+            padding: 6px;
+            font-family: serif;
+            word-spacing: 2px;
+            padding: 5px;
+        }
+        .title_sub span {
+            font-style: italic;
+            font-weight: bold;
+            color: blue;
+            text-decoration: green underline dotted;
+            font-size: 17px;
+        }
+
+        .additional_services {
+            text-align: center;
+            border: 1px solid;
+            padding: 5px;
+            margin: 30px;
+            /* text-decoration: green underline double;
                 font-size: 25px;
                 margin: 50px;
-            }
-            .additional_services .it_supports li{
-                font-weight: bold;
-            }
-            .additional_services .it_supports dd{
-                font-family: serif;
-            }
-            
-            footer{
-                width: 100%;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                font-family: serif;
-                font-weight: bold;
-                align-content: center;
-                background: lightgray;
-            }
+                padding: 5px;*/
+        }
+        .additional_services .it_supports li {
+            font-weight: bold;
+        }
+        .additional_services .it_supports dd {
+            font-family: serif;
+            text-align: left;
+        }
+
+        footer {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: serif;
+            font-weight: bold;
+            align-content: center;
+            background: lightgray;
+        }

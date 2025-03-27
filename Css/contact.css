@@ -1,58 +1,122 @@
-    /*style*/
-       
-        @media screen and (min-width:700px){
-            .menu{
-                font-size: 2em;
+    @media screen and (min-width:700px){
+            
+           .page .menu{
+                font-size: 3em;
             }
-            .social .hire_button{
-                font-size: 2em;
+            
+           .page .head_description p{
+                font-size: 35px;
+            }
+            
+            .page #contact_form .input_field input{
+                font-size: 35px;
+            }
+            
+            .page #contact_form textarea{
+                font-size: 35px;
+            }
+            .page #contact_form #submit_button{
+                font-size: 35px;
             }
         }
-            body{
-                background-image: url('img/bg2.jpg');
-                background-repeat: no-repeat;
-               /*background: darkgray;*/
-                
-            }
-            .menu{
-                border: 1px solid blue;
-                text-align: center;
-                background-image: linear-gradient(to right,blue,brown,green);
-                margin-top:0px;
-                margin-bottom: 30px;
-                /*font-size: 15px;*/
-            }
-            .menu a{
-                margin: 10px;
-                font-family: serif;
-                font-weight: bold;
-                color: white;
-                text-decoration: none;
-                transition-duration: 0.5s;
-                
-            }
-            .menu a:hover{
-                background: orange;
-            }
-            
-            .contact-list{
-                align-content: center;
-                width: 100%;
-                font-family: serif;
-                font-weight: bold;
-                border: 1px solid green;
-                background: white;
-            }
-            
-            footer{
-                width: 100%;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                font-size: 20px;
-                font-family: serif;
-                font-weight: bold;
-                align-content: center;
-                background: lightgray;
-                bottom: 0px;
-                position: fixed;
-            }
+    
+    
+        .page{
+            margin: 5px;
+        }
+        body{
+            background: #f2f2f2;
+            background: white;
+            text-align: center;
+        }
+    
+        .menu{
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px solid;
+            padding: 5px;
+        }
+        .menu a{
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: serif;
+            color: black;
+            border: 1px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: none;
+        }
+        .menu a:hover{
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+       
+       .head_description{
+           text-align: left;
+           margin: 30px;
+           border: 1px solid;
+           padding: 10px;
+           box-shadow: 1px 2px 25px 5px rgb(19,37,200);
+       }
+       .head_description p{
+           font-size: 20px;
+           font-family: serif;
+           color: black;
+           font-weight: bold;
+       }
+       .head_description div{
+           border: 1px solid green;
+           padding: 5px;
+           text-align: center;
+       }
+       
+       #contact_form .input_field{
+           display: flex;
+           flex-wrap: flex;
+           justify-content: center;
+       }
+       
+       #contact_form .input_field input{
+           width: 100%;
+           max-width: 400px;
+           margin-left: 10px;
+           margin-right: 10px;
+           margin-top: 20px;
+           font-size: 15px;
+           box-shadow: 1px 6px 8px 1px black;
+           border-radius: 4px;
+           padding: 10px;
+           font-family: Sans-Serif;
+           font-weight: bold;
+           
+       }
+       
+       #contact_form .input_field input:focus{
+          background-image: radial-gradient(orange , yellow); 
+          color: black;
+       }
+       
+       #contact_form textarea{
+           width: 80%;
+           max-width: 500px;
+           height: 200px;
+           margin-top: 30px;
+           border: 2px solid black;
+           font-family: Sans-Serif;
+           font-weight: bold;
+           box-shadow: 6px 3px 8px 1px black;
+       }
+       #contact_form textarea:focus{
+           background: ;
+       }
+       
+       
+       #contact_form #submit_button{
+           margin: 20px;
+           font-size: 20px;
+           font-weight: bold;
+           font-family: serif;
+           padding: 5px;
+       }

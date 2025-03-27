@@ -1,111 +1,242 @@
-           /*style*/
-       
         @media screen and (min-width:700px){
-            .menu{
-                font-size: 2em;
+            
+            .menu a{
+                font-size: 3em;
             }
-            .social .hire_button{
-                font-size: 2em;
+            .page{
+
+            }
+            .home{
+                display: flex;
+                flex-wrap: flex;
+                justify-content: center;
+            }
+            .identity #photo{
+                height: auto;
+            }
+            .identity{
+                margin-bottom: ;
+            }
+            .skill_detail p{
+                margin-top: 0px;
+                font-size: 3em;
+            }
+          .home .skill_detail #hireme{
+              font-size: 50px;
+            }
+        } /* Media Screen End */
+        
+        
+        .about{
+            text-align: center;
+            font-size: 25px;
+            margin: 5px;
+        }
+        .page{
+            margin: 5px;
+            border: 1px solid;
+            box-shadow: 1px 2px 25px 0.5px black;
+            padding: 10px;
+            
+        }
+        .menu{
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px solid;
+            padding: 5px;
+        }
+        .menu a{
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: serif;
+            color: black;
+            border: 1px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: none;
+        }
+        .menu a:hover{
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+        
+        .home{
+            margin: 5px;
+        }
+        
+        .identity{
+            text-align: center;
+            width: 100%;
+            margin-right: 5%;
+        }
+        .identity #photo{
+            width: 100%;
+            height: auto;
+            border-radius: 55px 5px 55px 5px;
+            animation: shape 5s infinite ease-in;
+            animation-direction: alternate-reverse;
+        }
+        .identity #name , #skill{
+            font-size: 20px;
+            font-family: serif;
+            line-height: normal;
+            background: aqua;
+            border: 1px solid;
+            border: none;
+            border-radius: 5%;
+            padding: 5px;
+            animation: identity_background 3s infinite;
+            animation-direction: alternate-reverse;
+        }
+        
+        
+      /*  .skill_detail{
+            width: 350px;
+            height: 180px;
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 30px;
+            line-height: 3px;
+            font-weight: bold;
+            font-family: Times;
+            background: lightgray;
+            border: 1px solid black;
+            box-shadow: 1px 1px 10px 0.5px black;
+        }*/
+        .skill_detail{
+            width: 100%;
+            text-align: center;
+            align-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background: #adadad;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: serif;
+            border: 1px solid;
+            box-shadow: 2px 2px 15px 0.5px black;
+            border-radius: 25px 5px 25px 5px;
+        }
+        
+        .skill_detail #d1{ }
+        .skill_detail #d2{ color: blue; }
+        .skill_detail #d3{ }
+        .skill_detail #d4{ color: blue; }
+             
+        .skill_detail .socialN{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-wrap: flex;
+            overflow-x: scroll;
+            align-content: center;
+        }  
+        
+        .skill_detail .socialN img{
+            width: 100px;
+            height: auto;
+        }
+        .skill_detail #hireme{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: serif;
+            background: green;
+            color: white;
+            padding: 5px;
+            border-radius: 5%;
+            box-shadow: 1px 2px 20px 5px yellow;
+            border: ;
+            margin: 15px;
+        }
+        .skill_detail #hireme:hover{
+            /* Animate */
+            animation-name: focus;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in ease-out;
+        }
+        @keyframes focus{    
+          /*  from{
+              box-shadow: 1px 2px 25px 15px green ;
+              border-left: 1px dotted purple;
+              padding: 5px;
+            }
+            to{
+              box-shadow: 1px 2px 30px 10px red ;
+              border-right: 1px dotted yellow;
+              padding: 30px;
+            }*/
+            
+            0%{
+              box-shadow: 1px 2px 90px 15px #ff00fb;
+              color: white;
+            }
+            50%{
+              box-shadow: 1px 2px 90px 35px lightgreen ;
+              color: yellow;
+            }
+            100%{
+              box-shadow: 1px 2px 90px 10px #ff00fb;
+              color: white;
             }
         }
-            body{
-                background: white;
-               /*background: darkgray;*/
-                
-            }
-            .menu{
-                border: 1px solid blue;
-                text-align: center;
-                background-image: linear-gradient(to right,blue,brown,green);
-                margin-top:0px;
-                margin-bottom: 30px;
-                /*font-size: 15px;*/
-            }
-            .menu a{
-                margin: 10px;
-                font-family: serif;
-                font-weight: bold;
-                color: white;
-                text-decoration: none;
-                transition-duration: 0.5s;
-                
-            }
-            .menu a:hover{
-                background: orange;
-            }
-            .home-content img{
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-            }
-            .home-content .intro .name,.pation{
-                font-size: 20px;
-                font-family: serif;
-                font-weight: bold;
-                margin-left: 5px;
-            }
-            .intro span{
-                color: white;
-                font-size: 20px;
-                font-family: serif;
-                font-weight: bold;
-                background: black;
-                padding: 5px;
-            }
-            .home-content .detail .description{
-                justify-content: center;
-                color: black;
-                font-size: 20px;
-                font-family: serif;
-                font-style: italic;
-                border: 1px solid blue;
-                padding: 20px;
-                margin: 10px;
-            }
-            .home-content .detail .description span{
-                /*color: black;*/
-                font-size: 22px;
-                font-weight: bold;
-                font-family: serif;
-                background: white;
-            }
-            .description .html{ color: darkorange;}
-            .description .css{ color: blue;}
-            .description .js{ color: #ccff00;}
+        
+        
+        @keyframes shape{
             
-            .social{
-                font-size: 30px;
-                text-align: center;
+            0%{
+                border-radius: 5px 55px 5px 55px;
+                filter: blur(0px);
             }
-            .social b{
-                margin: 10px;
+            90%{
+                border-radius: 55px 5px 55px 55px;
+                filter: blur(5px);
             }
-            .social .hire_button{
-                font-size: 20px;
-                color: white;
-                font-family: serif;
-                font-weight: bold;
-                border-radius: 5%;
-                transition-duration: 1.5s;
-                background: #007bff;
-                margin-bottom: 70px;
+            100%{
+                /*filter: blur(0px);*/
             }
-            .social .hire_button:hover{
-                background: blue;
-                font-family: Times;
-                color: yellow;
-                padding: 10px;
-                
+        }
+        
+        @keyframes identity_background{
+           
+           0%{
+               background-image: linear-gradient(red , orange);
+           }
+           100%{
+               background-image: radial-gradient(yellow , green);
+           }
+            
+        }
+        
+       /* #circle{
+            position: absolute;
+            top: 20px;
+            width: 80px;
+            height: 50px;
+            border-radius: 25%;
+            background: transparent;
+            border: 1px solid green;
+            animation: circle 5s infinite;
+            animation-direction: alternate-reverse;
+        }
+        
+        @keyframes circle{
+            
+            0%{
+                border-radius: 99px 23px 69px 33px;
             }
-            footer{
-                width: 100%;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                font-size: 20px;
-                font-family: serif;
-                font-weight: bold;
-                align-content: center;
-                background: lightgray;
-                bottom: 0px;
-                position: fixed;
+            30%{
+                border-radius: 34px 89px 109px 13px;
             }
+            60%{
+                border-radius: 84px 29px 09px 1px;
+            }
+            100%{
+                border-radius: 46px 77px 86px 90px;
+            }
+        } */

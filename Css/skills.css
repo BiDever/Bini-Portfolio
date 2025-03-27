@@ -1,91 +1,108 @@
-            
-    /*style*/
-            
-            @media screen and (min-width:700px){
-                .menu{
-                    font-size: 2em;
-                }
-            }
+@media screen and (min-width:700px) {
+
+        .page .menu {
+            font-size: 3em;
+        }
+        .page .menu a {
+            margin: 20px;
+        }
         
-            .menu{
-                border: 1px solid blue;
-                text-align: center;
-                background-image: linear-gradient(to right,blue,brown,green);
-                margin-top: 0px;
-                margin-bottom: 0px;
-                /*font-size: 15px;*/
-            }
-            .menu a{
-                margin: 10px;
-                font-family: serif;
-                font-weight: bold;
-                color: white;
-                text-decoration: none;
-                
-            }
-            .menu a:hover{
-                background: orange;
-            }
+        .page .skill_lists #skill_title{
+            font-size: 50px;
+        }
+        .page .skill_lists #skill_description u{
+            font-size: 40px;
+        }
+        .page .skill_lists #skill_description{
+            font-size: 30px;
+        }
         
-            
-            .title{
-                text-align: center;
-            }
-            
-            .skill_lists{
-                margin-top: 10px;
-                margin-bottom: 30px;
-            }
-            .skill_lists li{
-                margin-top: 50px;
-                list-style: square;
-                font-family: serif;
-                font-style: italic;
-                color: blue;
-                line-height: 5px;
-                text-decoration: green underline;
-                word-spacing: 5px;
-            }
-            .skill_lists img{
-                max-width: 400px;
-                max-height: 400px;
-            }
-            
-            .title2{
-                text-align: center;
-                color: rgb(150,200,100);
-                border: 2px solid green;
-                border-radius: 5px;
-                margin: 5px;
-                padding: 2pc;
-                font-size: 20px;
-            }
-            
-            .tech_list{
-                margin-top: 30px;
-                margin-bottom: 50px;
-                border: 2px solid green;
-            }
-            .tech_list li{
-                list-style: disc;
-                color: black;
-                text-decoration: red underline double;
-            }
-         .tech_list .des{
-                text-decoration: none;
-                text-decoration: blue underline;
-                list-style: square;
-                font-family: serif;
-                background: lightgray;
-                font-style: bold italic;
-            }
-            
-            footer{
-                width: 100%;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                font-family: serif;
-                font-weight: bold;
-                align-content: center;
-                background: lightgray;
-            }
+       .page .tech_list li h3{
+            font-size: 45px;
+        }
+        .page .tech_list .des {
+            font-size: 35px;
+        }
+
+    }
+    
+        .page{
+            margin: 5px;
+        }
+        body {
+            background: #f2f2f2;
+            text-align: center;
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 50px;
+            border: 1px solid;
+            padding: 5px;
+        }
+        .menu a {
+            margin: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: serif;
+            color: black;
+            border: 1px solid;
+            box-sizing: border-box;
+            border-radius: 20px;
+            border: none;
+        }
+        .menu a:hover {
+            background: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .skill_lists {
+            width: 100%;
+            height: auto;
+        }
+        .skill_lists #skill_title {
+            font-size: 20px;
+            font-family: serif;
+            font-weight: bold;
+        }
+        .skill_lists img {
+            width: 100%;
+            height: auto;
+        }
+        .skill_lists #skill_description {
+            font-size: 15px;
+            font-family: Sans-Serif;
+            font-weight: normal;
+            text-align: left;
+        }
+        .skill_lists #skill_description u{
+            font-size: 18px;
+            font-family: Comic;
+        }
+
+        .tech_list {
+            margin-top: 30px;
+            margin-bottom: 50px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border: 2px solid green;
+        }
+        .tech_list li {
+            list-style: disc;
+            color: black;
+            text-decoration: red underline double;
+        }
+        .tech_list li h4{
+            font-size: 25px;
+        }
+        .tech_list .des {
+            font-size: 15px;
+            text-decoration: none;
+            text-decoration: blue underline;
+            list-style: square;
+            font-family: serif;
+            background: lightgray;
+            font-style: bold italic;
+        }
+
